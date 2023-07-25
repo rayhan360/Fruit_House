@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
@@ -8,10 +8,70 @@
     <!-- Tailwind css and daisy ui link -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/9818622648.js" crossorigin="anonymous"></script>
+    <!-- custom css -->
+    <style>
+        .lato-fonts {
+            font-family: 'Lato', sans-serif;
+        }
+    </style>
 </head>
 
-<body>
-    
+<body class="lato-fonts">
+
+    <header class="max-w-screen-xl mx-auto my-6">
+        <!-- navbar section  -->
+        <nav class="md:bg-[#F85559] rounded-full">
+            <div class="navbar items-center justify-between flex flex-row-reverse lg:flex-row ">
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu text-black md:text-white menu-horizontal px-1">
+                        <li><a>Home</a></li>
+                        <li><a>About Us</a></li>
+                        <li><a>Shop</a></li>
+                        <li><a>All Fruits</a></li>
+                    </ul>
+                </div>
+
+
+                    
+                    <div class="dropdown">
+                        <label tabindex="0" class="btn btn-ghost text-black lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </label>
+                        <ul tabindex="0"
+                                    class="menu text-black menu-sm dropdown-content mt-3 z-[1] shadow bg-gray-100 relative right-8 md:bg-[#F85559] rounded-box w-auto">
+                                    <li><a>Home</a></li>
+                                    <li><a>About Us</a></li>
+                                    <li><a>Shop</a></li>
+                                    <li><a>All fruits</a></li>
+                                    <div class="form-control">
+                                        <input type="text" placeholder="Search" class="input input-bordered w-40 md:w-auto" />
+                                    </div>
+                                </ul>
+                    </div>
+                    <div>
+                        <a class="btn btn-ghost normal-case text-black md:text-white text-xl md:text-3xl"><img class=" w-10"
+                            src="images/logo.png" alt="">Fruits House</a>
+                    </div>
+
+
+                <div class="hidden lg:block form-control relative">
+                    <input type="text" placeholder="Search here"
+                        class="input input-bordered w-72 rounded-full pl-7 pr-7" />
+                    <i class="fa-solid fa-magnifying-glass absolute top-4 right-6 text-[#12121266]"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
 </body>
 
 </html>
